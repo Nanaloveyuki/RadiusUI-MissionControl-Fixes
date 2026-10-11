@@ -19,7 +19,9 @@ namespace RadiusUI.MissionControl.Fixes
             try
             {
                 LetterPatches.Install(harmony);
-                Log.Message("[Mission Control Fixes] Letter click and settings routing patches installed.");
+                MinimapPatches.Install(harmony);
+                HoverPatches.Install(harmony);
+                Log.Message("[Mission Control Fixes] Letter routing, minimap persistence and full-text hover patches installed.");
             }
             catch (Exception exception)
             {
